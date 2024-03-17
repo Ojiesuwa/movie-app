@@ -1,0 +1,42 @@
+.admin-priviledge {
+  width: 12rem;
+  height: 14rem;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-priviledge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.admin-priviledge i {
+  font-size: 2rem;
+}
+
+.admin-priviledge p {
+  font-family: "Poppins";
+  text-align: center;
+  font-weight: 300;
+  line-height: 0.9rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+  .admin-priviledge:hover {
+    transform: scale(1.05);
+    border-color: var(--faded);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .admin-priviledge {
+    width: 8.5rem;
+    height: 10rem;
+  }
+}

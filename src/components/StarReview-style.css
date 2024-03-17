@@ -1,0 +1,10 @@
+.star-review {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+.star-review i {
+  color: gold;
+  font-size: 0.76rem;
+}

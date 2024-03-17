@@ -1,0 +1,35 @@
+.nav-bar {
+  width: 100lvw;
+  height: 3rem;
+  background-color: var(--nav-background);
+  position: fixed;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  z-index: 350;
+  backdrop-filter: blur(3px);
+}
+
+.hidden {
+  bottom: -10rem;
+}
+.shown {
+  bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    position: fixed;
+    top: auto;
+    height: 5rem;
+    padding: 0.5rem 0.5rem 1rem;
+    justify-content: space-around;
+    gap: 0;
+  }
+  /* .hidden {
+    bottom: 0;
+  } */
+}

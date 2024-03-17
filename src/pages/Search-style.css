@@ -1,0 +1,16 @@
+.search-box {
+  padding: 2rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  z-index: 600;
+}
+
+.search-result {
+  padding-bottom: 5rem;
+  padding: 1rem 2rem 5rem;
+}

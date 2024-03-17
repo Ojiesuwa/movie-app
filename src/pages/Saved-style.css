@@ -1,0 +1,36 @@
+.saved {
+  width: 100;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  padding-bottom: 0;
+  height: 100svh;
+}
+
+.saved h3 {
+}
+
+.saved-list-n {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: fit-content;
+  max-height: 90lvh;
+  overflow-y: scroll;
+}
+
+.movie-box {
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+@media screen and (max-width: 700px) {
+  .saved-list-n {
+    margin-top: 1.5rem;
+  }
+}

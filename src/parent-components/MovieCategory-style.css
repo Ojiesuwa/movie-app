@@ -1,0 +1,31 @@
+.movie-list {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: visible;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  height: fit-content;
+}
+.movie-category {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  overflow-y: visible;
+}
+
+@media screen and (max-width: 700px) {
+  .movie-category {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    gap: 12px;
+  }
+  .movie-list {
+    height: 15rem;
+    gap: 1rem;
+  }
+}

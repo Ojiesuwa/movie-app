@@ -1,0 +1,77 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100lvh;
+  backdrop-filter: blur(15px);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-body {
+  width: 100%;
+  max-width: 400px;
+  height: fit-content;
+  background-color: var(--background-color);
+  border-radius: 6px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.icon-box i {
+  font-size: 1.5rem;
+}
+
+.action-box {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.action-box button {
+  width: 100%;
+}
+
+.content-box p {
+  text-align: center;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+}
+
+.fa-circle-xmark {
+  font-size: 2rem;
+}
+
+.fa-circle-xmark:hover {
+  color: red;
+  transform: scale(0.95);
+}
+
+.fa-circle-xmark:active {
+  color: green;
+  transition: 0s;
+  transform: scale(0.8);
+}
+
+@media screen and (max-width: 700px) {
+  .fa-circle-xmark:hover {
+    color: #fff;
+    transform: scale(1);
+  }
+  .fa-circle-xmark:active {
+    color: green;
+    transition: 0s;
+    transform: scale(0.8);
+  }
+}

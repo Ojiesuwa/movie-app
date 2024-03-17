@@ -1,0 +1,153 @@
+.home {
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.full-screen {
+  height: 100svh;
+}
+
+.not-full-screen {
+  height: calc(100svh - 3rem);
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 400;
+}
+
+.hero-nav-btn {
+  position: absolute;
+  right: 10rem;
+  margin-top: 15rem;
+  /* top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-nav-btn i {
+}
+
+.flip {
+  width: 100%;
+  height: 40rem;
+  background-color: var(--background-color);
+  position: absolute;
+  transform: rotate(-60deg);
+  right: -30rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+  transform: translateY(-60%);
+  width: 15rem;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 0.9;
+  font-family: "Poppins";
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 10rem;
+  margin-top: 1rem;
+}
+
+.movie-list .title {
+  margin-bottom: 10px;
+}
+
+.movie-list .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fade {
+  display: none;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgb(0, 0, 0, 1) 100%
+  );
+}
+
+.back-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100lvw;
+  height: 100lvh;
+  object-fit: cover;
+  z-index: -10;
+  filter: blur(15px) brightness(0.2);
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+  .hero-image {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-image img {
+    border-radius: 10px;
+  }
+  .home {
+    height: calc(100svh - 0);
+  }
+  .intro-text {
+    position: relative;
+    font-size: 1.2rem;
+    top: 0;
+    right: auto;
+    transform: translateY(0) translateX(0);
+    font-family: "Montserrat";
+    width: 100%;
+    font-weight: 700;
+    line-height: normal;
+    display: none;
+  }
+  .flip {
+    display: none;
+  }
+  .fade {
+    display: block;
+  }
+  .hero-nav-btn {
+    transform: translateX(0) translateY(0);
+    left: 2rem;
+    bottom: 1.7rem;
+    gap: 0.5rem;
+  }
+}
